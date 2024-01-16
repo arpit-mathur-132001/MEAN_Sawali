@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SawaliDashboard } from './dashboard/sawali-dashboard.component';
+import { SavaaliiDashboard } from './dashboard/savaalii-dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, SawaliDashboard],
+  declarations: [AppComponent, SavaaliiDashboard],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
