@@ -1,4 +1,4 @@
-<textarea rows="6" [value]="newSawal"></textarea>
+<textarea rows="6" [value]="newSawal" #sawalTitle></textarea>
 <hr />
-<button (click)="onSave()">save sawal</button>
+<button (click)="onSave(sawalTitle)">save sawal</button>
 <p>{{ newSawal }}</p>

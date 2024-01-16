@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class SawaliDashboard {
   newSawal = 'No Sawal!';
-  onSave() {
-    this.newSawal = 'New Sawal Added!';
+  onSave(sawalTitle: HTMLTextAreaElement) {
+    this.newSawal = sawalTitle.value;
   }
 }
