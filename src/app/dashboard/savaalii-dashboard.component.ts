@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './savaalii-dashboard.component.html',
 })
 export class SavaaliiDashboard {
+  enteredValue = '';
   newSavaal = 'No Savaal!';
-  onSave(savaalTitle: HTMLTextAreaElement) {
-    this.newSavaal = savaalTitle.value;
+  onSave() {
+    this.newSavaal = this.enteredValue;
   }
 }
