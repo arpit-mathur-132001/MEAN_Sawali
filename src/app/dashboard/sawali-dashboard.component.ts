@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './sawali-dashboard.component.html',
 })
 export class SawaliDashboard {
+  newSawal = '';
   onSave() {
-    alert('Saved!!!');
+    this.newSawal = 'New Sawal Added!';
   }
 }
