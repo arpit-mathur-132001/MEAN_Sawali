@@ -4,4 +4,8 @@ import { Component } from '@angular/core';
   selector: 'sawali-dashboard',
   templateUrl: './sawali-dashboard.component.html',
 })
-export class SawaliDashboard {}
+export class SawaliDashboard {
+  onSave() {
+    alert('Saved!!!');
+  }
+}
