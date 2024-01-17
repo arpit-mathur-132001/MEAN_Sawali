@@ -4,14 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SavaaliiDashboard } from './dashboard/savaalii-dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SavaaliiHeader } from './header/savaalii-header.component';
 
 @NgModule({
-  declarations: [AppComponent, SavaaliiDashboard],
+  declarations: [AppComponent, SavaaliiDashboard, SavaaliiHeader],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
