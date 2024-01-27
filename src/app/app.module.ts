@@ -8,12 +8,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SavaaliiDashboard } from './dashboard/savaalii-dashboard.component';
+import { SavaalCreateComponent } from './main-dashboard/savaal-create/savaal-create.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SavaaliiHeader } from './header/savaalii-header.component';
 
 @NgModule({
-  declarations: [AppComponent, SavaaliiDashboard, SavaaliiHeader],
+  declarations: [AppComponent, SavaalCreateComponent, SavaaliiHeader],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'savaalii-dashboard',
-  templateUrl: './savaalii-dashboard.component.html',
-  styleUrl: './savaalii-dashboard.component.css',
+  templateUrl: './savaal-create.component.html',
+  styleUrl: './savaal-create.component.css',
 })
-export class SavaaliiDashboard {
+export class SavaalCreateComponent {
   enteredValue = '';
   newSavaal = 'No Savaal!';
   onSave() {
