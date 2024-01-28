@@ -1,0 +1,23 @@
+<!-- <div *ngFor="let savaalTopic of savaalTopics">
+  <div>{{ savaalTopic.topic }}</div>
+  <div>{{ savaalTopic.description }}</div>
+</div> -->
+
+<div class="flex-container">
+  <div class="container" *ngFor="let savaalTopic of savaalTopics">
+    <div [ngClass]="savaalTopic.toggleProperty ? 'flipped' : ''" class="card">
+      <div class="front">
+        <h2>{{ savaalTopic.topic }}</h2>
+        <div class="arrow-icon" (click)="savaalTopic.toggle()">
+          <i class="ion-ios-arrow-back"></i>
+        </div>
+      </div>
+      <div class="back">
+        <h2>{{ savaalTopic.description }}</h2>
+        <div class="arrow-icon" (click)="savaalTopic.toggle()">
+          <i class="ion-ios-arrow-back"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

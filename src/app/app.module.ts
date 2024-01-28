@@ -11,9 +11,15 @@ import { AppComponent } from './app.component';
 import { SavaalCreateComponent } from './main-dashboard/savaal-create/savaal-create.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SavaaliiHeader } from './header/savaalii-header.component';
+import { SavaalListComponent } from './main-dashboard/savaal-list/savaal-list.component';
 
 @NgModule({
-  declarations: [AppComponent, SavaalCreateComponent, SavaaliiHeader],
+  declarations: [
+    AppComponent,
+    SavaalCreateComponent,
+    SavaaliiHeader,
+    SavaalListComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

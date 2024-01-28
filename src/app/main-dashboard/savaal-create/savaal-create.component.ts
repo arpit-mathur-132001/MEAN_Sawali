@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'savaalii-dashboard',
+  selector: 'savaal-create',
   templateUrl: './savaal-create.component.html',
   styleUrl: './savaal-create.component.css',
 })
