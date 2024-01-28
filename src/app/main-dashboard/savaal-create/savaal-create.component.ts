@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'savaal-create',
@@ -6,9 +6,18 @@ import { Component } from '@angular/core';
   styleUrl: './savaal-create.component.css',
 })
 export class SavaalCreateComponent {
-  enteredValue = '';
-  newSavaal = 'No Savaal!';
+  enteredTopic = '';
+  enteredDescription = '';
+  @Output() savaalTopicCreated = new EventEmitter();
   onSave() {
-    this.newSavaal = this.enteredValue;
+    const savaal = {
+      topic: this.enteredTopic,
+      description: this.enteredDescription,
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
+      },
+    };
+    this.savaalTopicCreated.emit(savaal);
   }
 }

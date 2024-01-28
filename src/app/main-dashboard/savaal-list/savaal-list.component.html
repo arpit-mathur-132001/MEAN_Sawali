@@ -1,9 +1,4 @@
-<!-- <div *ngFor="let savaalTopic of savaalTopics">
-  <div>{{ savaalTopic.topic }}</div>
-  <div>{{ savaalTopic.description }}</div>
-</div> -->
-
-<div class="flex-container">
+<div class="flex-container" *ngIf="savaalTopics.length > 0">
   <div class="container" *ngFor="let savaalTopic of savaalTopics">
     <div [ngClass]="savaalTopic.isFlipped ? 'flipped' : ''" class="card">
       <div class="front">
@@ -21,3 +16,6 @@
     </div>
   </div>
 </div>
+<p *ngIf="savaalTopics.length <= 0" class="mat-body-1 info-text">
+  No Topics Yet!!!
+</p>

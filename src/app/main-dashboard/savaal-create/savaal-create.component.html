@@ -1,9 +1,13 @@
-<!-- <p>{{ newSavaal }}</p> -->
 <mat-card>
-  <mat-form-field>
-    <textarea matInput rows="1" [(ngModel)]="enteredValue"></textarea>
-  </mat-form-field>
+  <div class="flex-container">
+    <mat-form-field id="topic-form">
+      <input matInput type="text" [(ngModel)]="enteredTopic" />
+    </mat-form-field>
+    <mat-form-field id="description-form">
+      <textarea matInput rows="2" [(ngModel)]="enteredDescription"></textarea>
+    </mat-form-field>
+  </div>
   <button color="primary" mat-raised-button (click)="onSave()">
-    save savaal
+    Save Savaal
   </button>
 </mat-card>

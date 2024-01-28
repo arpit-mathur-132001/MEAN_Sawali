@@ -1,8 +1,10 @@
 <savaalii-header></savaalii-header>
 
 <div class="app-savaal-list">
-  <savaal-list></savaal-list>
+  <savaal-list [savaalTopics]="storedSavaalTopics"></savaal-list>
 </div>
 <div class="app-savaal-create">
-  <savaal-create></savaal-create>
+  <savaal-create
+    (savaalTopicCreated)="onSavaalTopicAdded($event)"
+  ></savaal-create>
 </div>

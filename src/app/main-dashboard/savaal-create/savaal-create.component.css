@@ -11,3 +11,17 @@ textarea {
 textarea {
   resize: none;
 }
+
+.flex-container {
+  display: flex;
+}
+
+#topic-form {
+  width: unset;
+  flex-grow: 1;
+}
+
+#description-form {
+  width: unset;
+  flex-grow: 2;
+}
