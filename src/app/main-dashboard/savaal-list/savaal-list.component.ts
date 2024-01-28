@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SavaalTopic } from '../savaal-topic.model';
 
 @Component({
   selector: 'savaal-list',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './savaal-list.component.css',
 })
 export class SavaalListComponent {
-  @Input() savaalTopics: any = [];
+  @Input() savaalTopics: SavaalTopic[] = [];
 }

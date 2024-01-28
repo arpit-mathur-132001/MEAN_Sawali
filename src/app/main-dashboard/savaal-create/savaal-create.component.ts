@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { SavaalTopic } from '../savaal-topic.model';
 
 @Component({
   selector: 'savaal-create',
@@ -8,7 +9,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class SavaalCreateComponent {
   enteredTopic = '';
   enteredDescription = '';
-  @Output() savaalTopicCreated = new EventEmitter();
+  @Output() savaalTopicCreated = new EventEmitter<SavaalTopic>();
   onSave() {
     const savaal = {
       topic: this.enteredTopic,

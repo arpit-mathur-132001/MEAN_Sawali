@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SavaalTopic } from './main-dashboard/savaal-topic.model';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Savaalii';
-  storedSavaalTopics: any = [];
+  storedSavaalTopics: SavaalTopic[] = [];
 
-  onSavaalTopicAdded(savaalTopic: any) {
+  onSavaalTopicAdded(savaalTopic: SavaalTopic) {
     this.storedSavaalTopics.push(savaalTopic);
   }
 }
