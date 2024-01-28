@@ -31,10 +31,23 @@
   height: 100%;
   backface-visibility: hidden;
   border-radius: 6px;
-  background-color: #128bea;
+  background-color: black;
   color: #fff;
   display: grid;
   place-items: center;
+}
+
+.card .front > h2,
+.card .back > h2 {
+  text-align: center;
+}
+
+.card .front > h2 {
+  color: khaki;
+}
+
+.card .back > h2 {
+  color: violet;
 }
 
 .back {
@@ -58,4 +71,10 @@
   align-items: center;
   border-radius: 50%;
   border: 1px solid #fff;
+}
+
+@media screen and (max-width: 642px) {
+  .container {
+    width: 600px;
+  }
 }

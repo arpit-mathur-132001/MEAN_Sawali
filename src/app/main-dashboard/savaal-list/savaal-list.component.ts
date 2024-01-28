@@ -10,89 +10,97 @@ export class SavaalListComponent {
     {
       topic: 'First Topic',
       description: 'This is the first topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Second Topic',
       description: 'This is the second topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
     {
       topic: 'Third Topic',
       description: 'This is the third topic description',
-      toggleProperty: false,
-      toggle() {
-        this.toggleProperty = !this.toggleProperty;
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
+      },
+    },
+    {
+      topic: 'Third Topic',
+      description: 'This is the third topic description',
+      isFlipped: false,
+      flip() {
+        this.isFlipped = !this.isFlipped;
       },
     },
   ];
