@@ -1,5 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { SavaalTopic } from '../savaal-topic.model';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'savaal-create',
@@ -7,13 +8,12 @@ import { SavaalTopic } from '../savaal-topic.model';
   styleUrl: './savaal-create.component.css',
 })
 export class SavaalCreateComponent {
-  enteredTopic = '';
-  enteredDescription = '';
   @Output() savaalTopicCreated = new EventEmitter<SavaalTopic>();
-  onSave() {
+  onSave(postForm: NgForm) {
+    if (postForm.invalid) return;
     const savaal = {
-      topic: this.enteredTopic,
-      description: this.enteredDescription,
+      topic: postForm.value.topic,
+      description: postForm.value.description,
       isFlipped: false,
       flip() {
         this.isFlipped = !this.isFlipped;

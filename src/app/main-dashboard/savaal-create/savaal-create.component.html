@@ -1,13 +1,32 @@
 <mat-card>
-  <div class="flex-container">
-    <mat-form-field id="topic-form">
-      <input matInput type="text" [(ngModel)]="enteredTopic" />
-    </mat-form-field>
-    <mat-form-field id="description-form">
-      <textarea matInput rows="2" [(ngModel)]="enteredDescription"></textarea>
-    </mat-form-field>
-  </div>
-  <button color="primary" mat-raised-button (click)="onSave()">
-    Save Savaal
-  </button>
+  <form action="" (submit)="onSave(savaalForm)" #savaalForm="ngForm">
+    <div class="flex-container">
+      <mat-form-field id="topic-form">
+        <input
+          matInput
+          required
+          minlength="3"
+          name="topic"
+          type="text"
+          ngModel
+          #topic="ngModel"
+        />
+        <mat-error *ngIf="topic.invalid">Please enter savaal topic</mat-error>
+      </mat-form-field>
+      <mat-form-field id="description-form">
+        <textarea
+          required
+          name="description"
+          matInput
+          rows="2"
+          ngModel
+          #description="ngModel"
+        ></textarea>
+        <mat-error *ngIf="description.invalid"
+          >Please enter savaal description</mat-error
+        >
+      </mat-form-field>
+    </div>
+    <button color="accent" mat-raised-button type="submit">Save Savaal</button>
+  </form>
 </mat-card>
